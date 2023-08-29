@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Courier</display-name>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet> 
+  <servlet-name> Login </servlet-name> 
+  <servlet-class> com.klu.Login </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet> 
+    <servlet> 
+  <servlet-name> Reg </servlet-name> 
+  <servlet-class> com.klu.Reg </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet> 
+    <servlet> 
+  <servlet-name> Service </servlet-name> 
+  <servlet-class> com.klu.Service </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+      <servlet> 
+  <servlet-name> Track </servlet-name> 
+  <servlet-class> com.klu.Track </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>  
+      <servlet> 
+  <servlet-name> Logout </servlet-name> 
+  <servlet-class> com.klu.Logout </servlet-class> 
+  </servlet> 
+   <servlet> 
+  <servlet-name> DownloadReceipt </servlet-name> 
+  <servlet-class> com.klu.DownloadReceipt </servlet-class> 
+    <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet> 
+     <servlet> 
+  <servlet-name> AdminRegister </servlet-name> 
+  <servlet-class> com.klu.AdminRegister </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+  <servlet> 
+  <servlet-name> Users </servlet-name> 
+  <servlet-class> com.admin.Users </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+   <servlet> 
+  <servlet-name> Shipment </servlet-name> 
+  <servlet-class> com.admin.Shipment </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+   <servlet> 
+  <servlet-name> Deliveries </servlet-name> 
+  <servlet-class> com.admin.Deliveries </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+   <servlet> 
+  <servlet-name> Shipments </servlet-name> 
+  <servlet-class> com.admin.Shipments </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+   <servlet> 
+  <servlet-name> AdminUpdate </servlet-name> 
+  <servlet-class> com.admin.AdminUpdate </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+    <servlet> 
+  <servlet-name> AdminDelete </servlet-name> 
+  <servlet-class> com.admin.AdminDelete </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+     <servlet> 
+  <servlet-name> DeliveryDelete </servlet-name> 
+  <servlet-class> com.admin.DeliveryDelete </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet>
+    <servlet> 
+  <servlet-name> Exam </servlet-name> 
+  <servlet-class> com.exam.Exam </servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet> 
+    <servlet> 
+  <servlet-name>DeleteExapary</servlet-name> 
+  <servlet-class> com.exam.DeleteExapary</servlet-class> 
+      <init-param> 
+  <param-name> driver </param-name> 
+  <param-value> oracle.jdbc.driver.OracleDriver </param-value> 
+   </init-param> 
+   <init-param> 
+  <param-name> url </param-name> 
+  <param-value> jdbc:oracle:thin:@localhost:1521:xe </param-value> 
+   </init-param> 
+  </servlet> 
+   <servlet-mapping> 
+  <servlet-name> Login </servlet-name> 
+  <url-pattern> /login </url-pattern> 
+ </servlet-mapping> 
+ <servlet-mapping> 
+  <servlet-name> Reg </servlet-name> 
+  <url-pattern> /regs </url-pattern> 
+ </servlet-mapping>
+ <servlet-mapping> 
+  <servlet-name> Service </servlet-name> 
+  <url-pattern> /service </url-pattern> 
+ </servlet-mapping>
+ <servlet-mapping> 
+  <servlet-name> Track </servlet-name> 
+  <url-pattern> /track </url-pattern> 
+ </servlet-mapping>   
+  <servlet-mapping> 
+  <servlet-name> Logout </servlet-name> 
+  <url-pattern> /logout </url-pattern> 
+ </servlet-mapping>  
+  <servlet-mapping> 
+  <servlet-name> DownloadReceipt </servlet-name> 
+  <url-pattern> /receipt </url-pattern> 
+ </servlet-mapping>  
+ <servlet-mapping> 
+  <servlet-name> AdminRegister </servlet-name> 
+  <url-pattern> /adminregs </url-pattern> 
+ </servlet-mapping> 
+   <servlet-mapping> 
+  <servlet-name> Users </servlet-name> 
+  <url-pattern> /adminusers </url-pattern> 
+ </servlet-mapping> 
+    <servlet-mapping> 
+  <servlet-name>Shipment  </servlet-name> 
+  <url-pattern> /adminship </url-pattern> 
+ </servlet-mapping>
+    <servlet-mapping> 
+  <servlet-name>Deliveries  </servlet-name> 
+  <url-pattern> /admindel </url-pattern> 
+ </servlet-mapping> 
+  <servlet-mapping> 
+  <servlet-name>Shipments  </servlet-name> 
+  <url-pattern> /adminships </url-pattern> 
+ </servlet-mapping> 
+  <servlet-mapping> 
+  <servlet-name>AdminUpdate  </servlet-name> 
+  <url-pattern> /adminupdate </url-pattern> 
+ </servlet-mapping> 
+  <servlet-mapping> 
+  <servlet-name>AdminDelete  </servlet-name> 
+  <url-pattern> /admindelete </url-pattern> 
+ </servlet-mapping> 
+   <servlet-mapping> 
+  <servlet-name>DeliveryDelete  </servlet-name> 
+  <url-pattern> /deliverydelete </url-pattern> 
+ </servlet-mapping> 
+   <servlet-mapping> 
+  <servlet-name>Exam  </servlet-name> 
+  <url-pattern> /exam </url-pattern> 
+ </servlet-mapping> 
+  <servlet-mapping> 
+  <servlet-name>DeleteExapary</servlet-name> 
+  <url-pattern> /deleteexp</url-pattern> 
+ </servlet-mapping> 
+ 
+</web-app>
